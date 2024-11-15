@@ -36,10 +36,5 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(this, TesteActivity.class);
             startActivity(intent);
         });
-        /*teste = findViewById(R.id.jTeste);
-        teste.setOnClickListener(v -> {
-            Intent intent = new Intent(this, TesteActivity.class);
-            startActivity(intent);
-        });*/
     }
 }

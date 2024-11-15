@@ -8,41 +8,85 @@
     tools:context=".TesteActivity">
 
     <Button
-        android:id="@+id/jLogin"
+        android:id="@+id/jButtonEsqSenha2"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="70dp"
-        android:layout_marginBottom="25dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="41dp"
+        android:backgroundTint="#009688"
+        android:text="Esqueceu Senha"
+        app:layout_constraintBottom_toTopOf="@+id/jUsuario2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/jLogin2"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <Button
+        android:id="@+id/jLogin2"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="34dp"
         android:backgroundTint="#009688"
         android:text="Login"
-        app:layout_constraintBottom_toTopOf="@+id/jButtonCadastrar"
+        app:layout_constraintBaseline_toBaselineOf="@+id/jButtonEsqSenha2"
         app:layout_constraintEnd_toStartOf="@+id/jButtonEsqSenha2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/jButtonCadastrar2"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="34dp"
+        android:backgroundTint="#009688"
+        android:text="Cadastrar"
+        app:layout_constraintBaseline_toBaselineOf="@+id/jUsuario2"
+        app:layout_constraintEnd_toStartOf="@+id/jUsuario2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="35dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toTopOf="@+id/jButtonEsqSenha2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/jUsuario2"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="550dp"
+        android:backgroundTint="#009688"
+        android:text="Usuario"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/jButtonCadastrar2"
+        app:layout_constraintTop_toBottomOf="@+id/jButtonEsqSenha2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="161dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginBottom="66dp"
+        android:text="Área Teste"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/divider2"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/jButtonCadastrar"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="749dp"
-        android:backgroundTint="#009688"
-        android:text="Cadastrar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/jLogin"
-        app:layout_constraintStart_toStartOf="@+id/jLogin"
-        app:layout_constraintTop_toBottomOf="@+id/jLogin" />
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top" />
 
-    <Button
-        android:id="@+id/jButtonEsqSenha2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="16dp"
-        android:backgroundTint="#009688"
-        android:text="Esqueceu Senha"
-        app:layout_constraintBottom_toBottomOf="@+id/jLogin"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/jLogin"
-        app:layout_constraintTop_toTopOf="@+id/jLogin" />
 </androidx.constraintlayout.widget.ConstraintLayout>

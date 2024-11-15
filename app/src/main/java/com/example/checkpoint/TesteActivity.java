@@ -15,6 +15,7 @@ public class TesteActivity extends AppCompatActivity {
     private Button esqsenha;
     private Button teste;
     private Button login;
+    private Button ma2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,19 +28,27 @@ public class TesteActivity extends AppCompatActivity {
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
             return insets;
         });
+
         esqsenha = findViewById(R.id.jButtonEsqSenha2);
         esqsenha.setOnClickListener(v -> {
             Intent intent = new Intent(this, EsqSenhaActivity.class);
             startActivity(intent);
         });
-        teste = findViewById(R.id.jButtonCadastrar);
+
+        teste = findViewById(R.id.jButtonCadastrar2);
         teste.setOnClickListener(v -> {
             Intent intent = new Intent(this, CadastroUsuario.class);
             startActivity(intent);
         });
-        login = findViewById(R.id.jLogin);
+        login = findViewById(R.id.jLogin2);
         login.setOnClickListener(v -> {
             Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
+        });
+
+        ma2 = findViewById(R.id.jUsuario2);
+        ma2.setOnClickListener(v -> {
+            Intent intent = new Intent(this, MainActivity2.class);
             startActivity(intent);
         });
     }
