@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Home"
+        android:icon="@drawable/baseline_home_24"
+        android:id="@+id/home"/>
+    <item android:title="Relatório"
+        android:icon="@drawable/baseline_analytics_24"
+        android:id="@+id/relatorio"/>
+    <item android:title="Cadastrar"
+        android:icon="@drawable/baseline_person_add_24"
+        android:id="@+id/cadastro"/>
+    <item android:title="Ponto"
+        android:icon="@drawable/baseline_person_pin_circle_24"
+        android:id="@+id/ponto"/>
+    <item android:title="Usuário"
+        android:icon="@drawable/baseline_person_24"
+        android:id="@+id/user"/>
+</menu>
