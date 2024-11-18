@@ -4,16 +4,17 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.widget.Button;
-
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import com.example.checkpoint.UserAct.UserActivity;
 
 public class MainActivity extends AppCompatActivity {
     private Button esqsenha;
     private Button teste;
+    private Button login;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,17 +24,25 @@ public class MainActivity extends AppCompatActivity {
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT); //Configuração para deixar a tela permanente em modo retrato
             return insets;
         });
+
         esqsenha = findViewById(R.id.jButtonEsqSenha);
         esqsenha.setOnClickListener(v -> {
             Intent intent = new Intent(this, EsqSenhaActivity.class);
             startActivity(intent);
         });
+
         teste = findViewById(R.id.jButtonTeste);
         teste.setOnClickListener(v -> {
             Intent intent = new Intent(this, TesteActivity.class);
+            startActivity(intent);
+        });
+
+        login = findViewById(R.id.jButtonLogin);
+        login.setOnClickListener(v -> {
+            Intent intent = new Intent(this, UserActivity.class);
             startActivity(intent);
         });
     }

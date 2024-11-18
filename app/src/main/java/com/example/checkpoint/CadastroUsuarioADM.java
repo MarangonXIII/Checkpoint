@@ -2,7 +2,6 @@ package com.example.checkpoint;
 
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
-
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;

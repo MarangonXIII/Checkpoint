@@ -2,6 +2,7 @@ package com.example.checkpoint;
 
 import android.Manifest;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.net.Uri;
@@ -32,10 +33,12 @@ public class FacialActivity extends AppCompatActivity {
     private Uri photoUri;
     private String currentPhotoPath;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_facial);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         Button btnOpenCamera = findViewById(R.id.jButtonCamera);
         imageView = findViewById(R.id.jCamera);

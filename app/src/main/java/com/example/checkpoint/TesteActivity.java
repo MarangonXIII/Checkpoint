@@ -9,7 +9,6 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.activity.EdgeToEdge;
 import androidx.core.graphics.Insets;
-
 import com.example.checkpoint.ADMAct.ADMActivity;
 import com.example.checkpoint.UserAct.UserActivity;
 
@@ -36,49 +35,48 @@ public class TesteActivity extends AppCompatActivity {
         });
 
         esqsenha = findViewById(R.id.jButtonEsqSenha2);
-        teste = findViewById(R.id.jButtonCadastrar2);
-        login = findViewById(R.id.jLogin2);
-        usu = findViewById(R.id.jUsuario2);
-        adm = findViewById(R.id.jADM2);
-        facial = findViewById(R.id.jFacial2);
-        emp = findViewById(R.id.jEmp2);
-        dep = findViewById(R.id.jDepartamento);
-
         esqsenha.setOnClickListener(v -> {
             Intent intent = new Intent(TesteActivity.this, EsqSenhaActivity.class);
             startActivity(intent);
         });
 
+        teste = findViewById(R.id.jButtonCadastrar2);
         teste.setOnClickListener(v -> {
             Intent intent = new Intent(TesteActivity.this, CadastroUsuarioADM.class);
             startActivity(intent);
         });
 
+        login = findViewById(R.id.jLogin2);
         login.setOnClickListener(v -> {
             Intent intent = new Intent(TesteActivity.this, MainActivity.class);
             startActivity(intent);
         });
 
+        usu = findViewById(R.id.jUsuario2);
         usu.setOnClickListener(v -> {
             Intent intent = new Intent(TesteActivity.this, UserActivity.class);
             startActivity(intent);
         });
 
+        adm = findViewById(R.id.jADM2);
         adm.setOnClickListener(v -> {
             Intent intent = new Intent(TesteActivity.this, ADMActivity.class);
             startActivity(intent);
         });
 
+        facial = findViewById(R.id.jFacial2);
         facial.setOnClickListener(v -> {
             Intent intent = new Intent(TesteActivity.this, FacialActivity.class);
             startActivity(intent);
         });
 
+        emp = findViewById(R.id.jEmp2);
         emp.setOnClickListener(v -> {
             Intent intent = new Intent(TesteActivity.this, CadastroEmpresaActivity.class);
             startActivity(intent);
         });
 
+        dep = findViewById(R.id.jDepartamento);
         dep.setOnClickListener(v -> {
             Intent intent = new Intent(TesteActivity.this, CadastrarDepartamentoActivity.class);
             startActivity(intent);

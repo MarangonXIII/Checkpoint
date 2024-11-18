@@ -1,7 +1,6 @@
 package com.example.checkpoint.ui.main;
 
 import static androidx.lifecycle.Transformations.map;
-
 import androidx.arch.core.util.Function;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

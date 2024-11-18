@@ -1,5 +1,6 @@
 package com.example.checkpoint.ADMAct;
 
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,6 +23,7 @@ public class ADMActivity extends AppCompatActivity {
 
         binding = ActivityAdmactivityBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         replaceFragment(new ADMHomeFragment());
 
