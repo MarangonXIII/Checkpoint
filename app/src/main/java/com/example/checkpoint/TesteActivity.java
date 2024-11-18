@@ -19,6 +19,9 @@ public class TesteActivity extends AppCompatActivity {
     private Button login;
     private Button usu;
     private Button adm;
+    private Button facial;
+    private Button emp;
+    private Button dep;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +40,9 @@ public class TesteActivity extends AppCompatActivity {
         login = findViewById(R.id.jLogin2);
         usu = findViewById(R.id.jUsuario2);
         adm = findViewById(R.id.jADM2);
+        facial = findViewById(R.id.jFacial2);
+        emp = findViewById(R.id.jEmp2);
+        dep = findViewById(R.id.jDepartamento);
 
         esqsenha.setOnClickListener(v -> {
             Intent intent = new Intent(TesteActivity.this, EsqSenhaActivity.class);
@@ -44,7 +50,7 @@ public class TesteActivity extends AppCompatActivity {
         });
 
         teste.setOnClickListener(v -> {
-            Intent intent = new Intent(TesteActivity.this, CadastroUsuario.class);
+            Intent intent = new Intent(TesteActivity.this, CadastroUsuarioADM.class);
             startActivity(intent);
         });
 
@@ -60,6 +66,21 @@ public class TesteActivity extends AppCompatActivity {
 
         adm.setOnClickListener(v -> {
             Intent intent = new Intent(TesteActivity.this, ADMActivity.class);
+            startActivity(intent);
+        });
+
+        facial.setOnClickListener(v -> {
+            Intent intent = new Intent(TesteActivity.this, FacialActivity.class);
+            startActivity(intent);
+        });
+
+        emp.setOnClickListener(v -> {
+            Intent intent = new Intent(TesteActivity.this, CadastroEmpresaActivity.class);
+            startActivity(intent);
+        });
+
+        dep.setOnClickListener(v -> {
+            Intent intent = new Intent(TesteActivity.this, CadastrarDepartamentoActivity.class);
             startActivity(intent);
         });
     }

@@ -11,7 +11,7 @@
         android:id="@+id/jButtonEsqSenha2"
         android:layout_width="0dp"
         android:layout_height="55dp"
-        android:layout_marginEnd="31dp"
+        android:layout_marginEnd="30dp"
         android:layout_marginBottom="41dp"
         android:backgroundTint="#009688"
         android:text="Esqueceu Senha"
@@ -21,10 +21,72 @@
         app:layout_constraintTop_toBottomOf="@+id/divider2" />
 
     <Button
+        android:id="@+id/jFacial2"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#009688"
+        android:text="Facial"
+        app:layout_constraintBottom_toTopOf="@+id/jEmp2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/jADM2"
+        app:layout_constraintTop_toBottomOf="@+id/jUsuario2" />
+
+    <Button
+        android:id="@+id/jEmp2"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="202dp"
+        android:backgroundTint="#009688"
+        android:text="Empresa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/jDepartamento"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jFacial2" />
+
+    <Button
+        android:id="@+id/jDepartamento"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#009688"
+        android:text="Departamento"
+        app:layout_constraintBaseline_toBaselineOf="@+id/jEmp2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/jEmp2" />
+
+    <Button
+        android:id="@+id/jButtonCadastrar2"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="35dp"
+        android:backgroundTint="#009688"
+        android:text="Cadastrar ADM"
+        app:layout_constraintBaseline_toBaselineOf="@+id/jUsuario2"
+        app:layout_constraintEnd_toStartOf="@+id/jUsuario2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/jADM2"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="35dp"
+        android:backgroundTint="#009688"
+        android:text="Tela ADM"
+        app:layout_constraintBaseline_toBaselineOf="@+id/jFacial2"
+        app:layout_constraintEnd_toStartOf="@+id/jFacial2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
         android:id="@+id/jLogin2"
         android:layout_width="0dp"
         android:layout_height="55dp"
-        android:layout_marginStart="37dp"
+        android:layout_marginStart="36dp"
         android:layout_marginEnd="34dp"
         android:backgroundTint="#009688"
         android:text="Login"
@@ -33,72 +95,40 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/jButtonCadastrar2"
+        android:id="@+id/jUsuario2"
         android:layout_width="0dp"
         android:layout_height="55dp"
-        android:layout_marginStart="37dp"
-        android:layout_marginEnd="34dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="35dp"
         android:backgroundTint="#009688"
-        android:text="Cadastrar"
-        app:layout_constraintBaseline_toBaselineOf="@+id/jUsuario2"
-        app:layout_constraintEnd_toStartOf="@+id/jUsuario2"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:text="Tela Usuario"
+        app:layout_constraintBottom_toTopOf="@+id/jFacial2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/jButtonCadastrar2"
+        app:layout_constraintTop_toBottomOf="@+id/jButtonEsqSenha2" />
 
     <View
         android:id="@+id/divider2"
-        android:layout_width="0dp"
+        android:layout_width="340dp"
         android:layout_height="1dp"
-        android:layout_marginStart="31dp"
-        android:layout_marginEnd="31dp"
-        android:layout_marginBottom="35dp"
+        android:layout_marginBottom="50dp"
         android:background="?android:attr/listDivider"
         app:layout_constraintBottom_toTopOf="@+id/jButtonEsqSenha2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    <Button
-        android:id="@+id/jUsuario2"
-        android:layout_width="0dp"
-        android:layout_height="55dp"
-        android:layout_marginEnd="31dp"
-        android:layout_marginBottom="35dp"
-        android:backgroundTint="#009688"
-        android:text="Usuario"
-        app:layout_constraintBottom_toTopOf="@+id/jADM2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/jButtonCadastrar2"
-        app:layout_constraintTop_toBottomOf="@+id/jButtonEsqSenha2" />
-
-    <Button
-        android:id="@+id/jADM2"
-        android:layout_width="0dp"
-        android:layout_height="55dp"
-        android:layout_marginBottom="460dp"
-        android:backgroundTint="#009688"
-        android:text="ADM"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/jButtonCadastrar2"
-        app:layout_constraintStart_toStartOf="@+id/jButtonCadastrar2"
-        app:layout_constraintTop_toBottomOf="@+id/jUsuario2" />
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="165dp"
         android:layout_height="0dp"
-        android:layout_marginTop="47dp"
-        android:layout_marginBottom="66dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginBottom="41dp"
         android:text="Área Teste"
         android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/divider2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.constraintlayout.widget.Barrier
-        android:id="@+id/barrier4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:barrierDirection="top" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
