@@ -30,19 +30,19 @@ public class MainActivity extends AppCompatActivity {
 
         esqsenha = findViewById(R.id.jButtonEsqSenha);
         esqsenha.setOnClickListener(v -> {
-            Intent intent = new Intent(this, EsqSenhaActivity.class);
+            Intent intent = new Intent(MainActivity.this, EsqSenhaActivity.class);
             startActivity(intent);
         });
 
         teste = findViewById(R.id.jButtonTeste);
         teste.setOnClickListener(v -> {
-            Intent intent = new Intent(this, TesteActivity.class);
+            Intent intent = new Intent(MainActivity.this, TesteActivity.class);
             startActivity(intent);
         });
 
         login = findViewById(R.id.jButtonLogin);
         login.setOnClickListener(v -> {
-            Intent intent = new Intent(this, UserActivity.class);
+            Intent intent = new Intent(MainActivity.this, UserActivity.class);
             startActivity(intent);
         });
     }

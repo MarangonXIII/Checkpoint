@@ -9,23 +9,34 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         android:gravity="center"
-        android:padding="16dp">
-
-        <Button
-            android:id="@+id/jButtonCamera"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Abrir Câmera" />
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="50dp">
 
         <ImageView
             android:id="@+id/jCamera"
             android:layout_width="250dp"
             android:layout_height="250dp"
-            android:layout_marginTop="16dp"
-            android:scaleType="centerCrop"
-            android:contentDescription="Imagem capturada" />
+            android:layout_marginTop="206dp"
+            android:layout_marginBottom="206dp"
+            android:contentDescription="Imagem capturada"
+            android:scaleType="centerCrop" />
+
+        <Button
+            android:id="@+id/jButtonCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#009688"
+            android:text="Abrir Câmera" />
+
     </LinearLayout>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

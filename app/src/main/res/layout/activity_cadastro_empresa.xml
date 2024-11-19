@@ -1,92 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--ScrollView & FrameLayout-->
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:scrollbarSize="0dp"
     tools:context=".CadastroEmpresaActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <EditText
-            android:id="@+id/editTextText7"
-            android:layout_width="275dp"
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="74dp"
-            android:layout_marginBottom="46dp"
-            android:ems="10"
-            android:inputType="text"
-            app:layout_constraintBottom_toTopOf="@+id/editTextText"
+            android:backgroundTint="#009688"
+            android:text="Cadastrar"
+            app:layout_constraintBottom_toTopOf="@+id/textView6"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
 
         <EditText
             android:id="@+id/editTextText"
-            android:layout_width="275dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:layout_marginEnd="68dp"
             android:layout_marginBottom="49dp"
             android:ems="10"
             android:inputType="text"
             app:layout_constraintBottom_toTopOf="@+id/editTextText3"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextText7" />
 
         <EditText
             android:id="@+id/editTextText2"
-            android:layout_width="275dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:layout_marginEnd="68dp"
             android:ems="10"
             android:inputType="text"
             app:layout_constraintBaseline_toBaselineOf="@+id/editTextText3"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent" />
 
         <EditText
             android:id="@+id/editTextText3"
-            android:layout_width="275dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:layout_marginEnd="68dp"
             android:layout_marginBottom="48dp"
             android:ems="10"
             android:inputType="text"
             app:layout_constraintBottom_toTopOf="@+id/editTextText4"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextText" />
 
         <EditText
             android:id="@+id/editTextText4"
-            android:layout_width="275dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:layout_marginEnd="68dp"
             android:layout_marginBottom="48dp"
             android:ems="10"
             android:inputType="text"
             app:layout_constraintBottom_toTopOf="@+id/editTextText5"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
 
         <EditText
             android:id="@+id/editTextText5"
-            android:layout_width="275dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:layout_marginEnd="68dp"
             android:layout_marginBottom="54dp"
             android:ems="10"
             android:inputType="text"
             app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword2"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextText4" />
 
@@ -101,39 +103,17 @@
 
         <EditText
             android:id="@+id/editTextTextPassword2"
-            android:layout_width="275dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:layout_marginEnd="68dp"
             android:layout_marginBottom="81dp"
             android:ems="10"
             android:inputType="textPassword"
             app:layout_constraintBottom_toTopOf="@+id/button8"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTextText5" />
-
-        <Button
-            android:id="@+id/button8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#009688"
-            android:text="Cadastrar"
-            app:layout_constraintBottom_toTopOf="@+id/textView6"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="48dp"
-            android:layout_height="0dp"
-            android:layout_marginBottom="1dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button8" />
 
         <TextView
             android:id="@+id/textView46"
@@ -175,6 +155,31 @@
             android:text="Departamento"
             app:layout_constraintBottom_toTopOf="@+id/editTextText5"
             app:layout_constraintStart_toStartOf="@+id/editTextText5" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="52dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="53dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button8" />
+
+        <EditText
+            android:id="@+id/editTextText7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:layout_marginTop="117dp"
+            android:layout_marginEnd="68dp"
+            android:layout_marginBottom="46dp"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintBottom_toTopOf="@+id/editTextText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
