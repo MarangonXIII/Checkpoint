@@ -19,8 +19,8 @@
             android:id="@+id/jCamera"
             android:layout_width="250dp"
             android:layout_height="250dp"
-            android:layout_marginTop="206dp"
-            android:layout_marginBottom="206dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="150dp"
             android:contentDescription="Imagem capturada"
             android:scaleType="centerCrop" />
 
