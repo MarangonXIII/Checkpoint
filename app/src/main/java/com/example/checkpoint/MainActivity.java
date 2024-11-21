@@ -79,6 +79,10 @@ public class MainActivity extends AppCompatActivity {
                         // Redireciona para a página de administrador
                         Intent intent = new Intent(MainActivity.this, ADMActivity.class);
                         startActivity(intent);
+                    } else if ("tester".equalsIgnoreCase(tipoUsuario)) {
+                        // Redireciona para a página de teste
+                        Intent intent = new Intent(MainActivity.this, TesteActivity.class);
+                        startActivity(intent);
                     } else {
                         // Redireciona para a página padrão de usuário
                         Intent intent = new Intent(MainActivity.this, UserActivity.class);

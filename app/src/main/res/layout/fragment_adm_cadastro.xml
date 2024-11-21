@@ -109,7 +109,7 @@
             android:id="@+id/textView42"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Endereço"
+            android:text="Tipo Usuário"
             app:layout_constraintBottom_toTopOf="@+id/editTextTextPostalAddress3"
             app:layout_constraintStart_toStartOf="@+id/editTextTextPostalAddress3" />
 
