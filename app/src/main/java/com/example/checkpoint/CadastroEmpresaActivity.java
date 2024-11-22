@@ -36,7 +36,7 @@ public class CadastroEmpresaActivity extends AppCompatActivity {
         editTextEndereco = findViewById(R.id.editTextText4);
         editTextDepartamento = findViewById(R.id.editTextText5);
         editTextSenha = findViewById(R.id.editTextTextPassword2);
-        buttonCadastrar = findViewById(R.id.jCadastraDepto);
+        buttonCadastrar = findViewById(R.id.CadastroADM);
 
         buttonCadastrar.setOnClickListener(v -> {
             String nomeFantasia = editTextNomeFantasia.getText().toString();

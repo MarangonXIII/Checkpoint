@@ -35,7 +35,7 @@ public class CadastrarDepartamentoActivity extends AppCompatActivity {
         editNome = findViewById(R.id.editTextText7);  // Campo "Nome"
         editEmpresa = findViewById(R.id.editTextText);  // Campo "Empresa"
         editUsuario = findViewById(R.id.editTextText3);  // Campo "Usuário"
-        btnCadastrar = findViewById(R.id.jCadastraDepto);  // Botão "Cadastrar"
+        btnCadastrar = findViewById(R.id.CadastroADM);  // Botão "Cadastrar"
 
         // Configurar o clique no botão de cadastro
         btnCadastrar.setOnClickListener(new View.OnClickListener() {

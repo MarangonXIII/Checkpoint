@@ -1,6 +1,6 @@
 package com.example.checkpoint.model;
 
-public class User {
+public class UserCadastro {
     private String nome;
     private String email;
     private String senha;
@@ -10,10 +10,10 @@ public class User {
     private String telefone;
     private String departamento;
 
-    public User() {
+    public UserCadastro() {
     }
 
-    public User(String nome, String email, String senha, String cpf, String rg, String tipoUsuario, String telefone, String departamento) {
+    public UserCadastro(String nome, String email, String senha, String cpf, String rg, String tipoUsuario, String telefone, String departamento) {
         this.nome = nome;
         this.email = email;
         this.senha = senha;

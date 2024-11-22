@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.checkpoint.model.User;
+import com.example.checkpoint.model.UserCadastro;
 import com.example.checkpoint.network.RetrofitClient;
 import com.example.checkpoint.network.UsuarioApiService;
 
@@ -19,7 +19,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class CadastroUsuarioADM extends AppCompatActivity {
+public class CadastroColab extends AppCompatActivity {
 
     private EditText nomeEditText, cpfEditText, rgEditText, tipoUsuarioEditText, telefoneEditText, emailEditText, departamentoEditText, senhaEditText;
     private Button cadastrarButton;
@@ -27,7 +27,7 @@ public class CadastroUsuarioADM extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cadastro_usuario_adm);
+        setContentView(R.layout.fragment_adm_cadastro);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         // Referência aos campos de entrada
@@ -68,30 +68,30 @@ public class CadastroUsuarioADM extends AppCompatActivity {
         }
 
         // Cria um objeto User para enviar os dados
-        User user = new User(nome, email, senha, cpf, rg, tipoUsuario, telefone, departamento);
+        UserCadastro usercadastro = new UserCadastro(nome, email, senha, cpf, rg, tipoUsuario, telefone, departamento);
 
         // Envia os dados para a API usando Retrofit
         UsuarioApiService apiService = RetrofitClient.getRetrofitInstance().create(UsuarioApiService.class);
-        Call<Void> call = apiService.cadastrarUsuario(user);
+        Call<Void> call = apiService.cadastrarUsuarioColab(usercadastro);
         call.enqueue(new Callback<Void>() {
             @Override
             public void onResponse(Call<Void> call, Response<Void> response) {
                 if (response.isSuccessful()) {
-                    Toast.makeText(CadastroUsuarioADM.this, "Usuário cadastrado com sucesso!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(CadastroColab.this, "Usuário cadastrado com sucesso!", Toast.LENGTH_SHORT).show();
 
                     // Redireciona para a tela principal (ou login) sem precisar do token
-                    Intent intent = new Intent(CadastroUsuarioADM.this, MainActivity.class);
+                    Intent intent = new Intent(CadastroColab.this, MainActivity.class);
                     startActivity(intent);
                     finish(); // Finaliza a atividade atual
                 } else {
-                    Toast.makeText(CadastroUsuarioADM.this, "Erro ao cadastrar usuário", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(CadastroColab.this, "Erro ao cadastrar usuário", Toast.LENGTH_SHORT).show();
                 }
             }
 
             @Override
             public void onFailure(Call<Void> call, Throwable t) {
                 Log.e("CadastroUsuarioADM", "Erro: " + t.getMessage());
-                Toast.makeText(CadastroUsuarioADM.this, "Falha na comunicação com o servidor", Toast.LENGTH_SHORT).show();
+                Toast.makeText(CadastroColab.this, "Falha na comunicação com o servidor", Toast.LENGTH_SHORT).show();
             }
         });
     }
